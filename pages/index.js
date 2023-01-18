@@ -8,17 +8,11 @@ import { getAuth, signOut } from 'config/firebase';
 
 // context
 import { AuthContext } from 'components/context/AuthContext';
-import { Grid } from '@giphy/react-components'
-import { GiphyFetch } from '@giphy/js-fetch-api'
 
 export default function Home() {
 	const { email, setEmail } = useContext(AuthContext);
 
 
-	const gf = new GiphyFetch('jNukRbo4dy4UrVTqisYrvudTOYWYcgs9')
-	const fetchGifs = () => gf.trending({ limit: 10, offset: 25, rating: 'g' })
-
-	console.log(fetchGifs, "dataa")
 
 	const handleLogout = () => {
 		const auth = getAuth();
@@ -50,9 +44,11 @@ export default function Home() {
 							<button className={css.button} onClick={handleLogout}>
 								Logout
 							</button>
-							<button className={css.button} onClick={handleChange}>
-								Open Gif
+							<Link href="/animation" passHref>
+							<button className={css.button}>
+								Go To Giphy Page →
 							</button>
+						</Link>
 
 						</div>
 

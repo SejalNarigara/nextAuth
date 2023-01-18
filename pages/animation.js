@@ -16,7 +16,7 @@ export default function Animation() {
 
 
     const gf = new GiphyFetch('jNukRbo4dy4UrVTqisYrvudTOYWYcgs9')
-    const fetchGifs = () => gf.trending({ limit: 10, offset: 25, rating: 'g' })
+    const fetchGifs = () => gf.trending({ limit: 10, offset: 25, rating: 'g'})
 
 
     return (
@@ -26,9 +26,10 @@ export default function Animation() {
             </Head>
 
             <main className={css.main}>
-
-                <Grid width={800} columns={3} fetchGifs={fetchGifs} />
-
+                <div className={css.user}>
+                    <Grid width={400} columns={3} gutter={6} fetchGifs={fetchGifs} />
+                    
+                </div>
             </main>
 
         </div>
