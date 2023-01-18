@@ -46,19 +46,5 @@ NEXT_PUBLIC_App_Id=YOUR_APP_ID_GOES_HERE
 
 4. Replace the values above with the keys you got when you set up the web app. (Firebase Setup #2)
 5. Now open your terminal and type in `npm run dev` to start the server.
+ 
 
-## 🎩 Preview
-
-![demo](assets/demo.gif)
-## 👨🏻‍💻 Contributing
-
-Make sure you read the [contributing guidelines](https://github.com/msaaddev/next-firebase-auth-template/blob/main/contributing.md) before opening a PR. 
-
-## ⚡️ Other Projects
-
-I have curated a [detailed list](https://github.com/msaaddev/open-source) of all the open-source projects I have authored. Do take out a moment and take a look.
-
-## 🔑 License & Conduct
-
-- MIT © [Saad Irfan](https://github.com/msaaddev)
-- [Code of Conduct](https://github.com/msaaddev/next-firebase-auth-template/blob/main/code-of-conduct.md)
